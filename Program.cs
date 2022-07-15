@@ -21,8 +21,7 @@ bool running = true;
 
 Console.WriteLine(@"
 Press Enter to select a new weapon
-Press Escape to exit app
-");
+Press Escape to exit app");
 
 while (running)
 {
