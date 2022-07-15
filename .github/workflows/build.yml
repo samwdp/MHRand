@@ -22,11 +22,11 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release
       - name: Publish Windows
-        run: dotnet publish --configuration Release -r win-x64 --no-self-contained
+        run: dotnet publish --configuration Release -r win-x64
       - name: Publish Linux
-        run: dotnet publish --configuration Release -r linux-x64 --no-self-contained
+        run: dotnet publish --configuration Release -r linux-x64
       - name: Publish OSX
-        run: dotnet publish --configuration Release -r osx-x64 --no-self-contained
+        run: dotnet publish --configuration Release -r osx-x64
       - name: Upload Windows
         uses: actions/upload-artifact@v3
         with:
